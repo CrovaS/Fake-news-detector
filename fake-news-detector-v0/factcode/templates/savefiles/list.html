@@ -1,0 +1,71 @@
+{#
+# Copyright 2015 Google Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#}
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>[Reservation List]</h2>
+
+<a href="/books/add" class="btn btn-success btn-sm">
+  <i class="glyphicon glyphicon-plus"></i>
+  Make Reservation
+</a>
+
+<div class="card mb-4">
+  <h5 class="card-header">Search</h5>
+  <div class="card-body">
+    <form method="GET" action="/books/titlesearch/">
+      <div class="form-group">
+        <input id="searchinput" type="text" name="title" placeholder="Search by Dormitory..." value="{{title}}">
+        <button id="#searchbutton" type="submit" class="fa fa-search">search</button>
+      </div>
+    </form>
+
+    <form method="GET" action="/books/authorsearch/">
+      <div class="form-group">
+        <input id="searchinput" type="text" name="author" placeholder="Search by Applicant..." value="{{author}}">
+        <button id="#searchbutton" type="submit" class="fa fa-search">search</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% for book in books %}
+<div class="media">
+  <a href="/books/{{book.id}}">
+    <div class="media-left">
+      <img src="https://img.icons8.com/ios/452/washing-machine.png" , height=200>
+    </div>
+    <div class="media-body">
+      <h4>{{book.title}}</h4>
+      <p>{{book.author}}</p>
+      <p>{{book.publishedDate}}</p>
+      <p>비고: {{book.rate}}</p>
+    </div>
+  </a>
+</div>
+{% else %}
+<p>No reservation found</p>
+{% endfor %}
+
+{% if next_page_token %}
+<nav>
+  <ul class="pager">
+    <li><a href="?page_token={{next_page_token}}">More</a></li>
+  </ul>
+</nav>
+{% endif %}
+{% endblock %}

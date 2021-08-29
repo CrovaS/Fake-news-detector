@@ -1,0 +1,62 @@
+{#
+# Copyright 2015 Google Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#}
+
+{# [START form] #}
+{% extends "base.html" %}
+
+{% block content %}
+<h3>{{action}} Reservation</h3>
+
+<form method="POST" enctype="multipart/form-data">
+
+  <div class="form-group">
+    <label for="title">Dormitory, Floor (기숙사, 층수)</label>
+    <input type="text" name="title" id="title" value="{{book.title}}" class="form-control"/>
+  </div>
+
+  <div class="form-group">
+    <label for="author">Applicant (신청자)</label>
+    <input type="text" name="author" id="author" value="{{book.author}}" class="form-control"/>
+  </div>
+
+  <div class="form-group">
+    <label for="publishedDate">Reservation Time (예약시간)</label>
+    <input type="text" name="publishedDate" id="publishedDate" value="{{book.publishedDate}}" class="form-control"/>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Expected Using Time (사용예정시간)</label>
+    <textarea name="description" id="description" class="form-control">{{book.description}}</textarea>
+  </div>
+
+  <!-- Juseok -->
+  <div class="form-group">
+    <label for="rate">More Descriptions (기타 참고사항)</label>
+    <textarea name="rate" id="rate" class="form-control">{{book.rate}}</textarea>
+  </div>
+  
+  <!--
+  <div class="form-group">
+    <label for="rate">Rate for the Book (Write integer 1~5)</label>
+    <input type="text" name="rate" id="rate" value="{{book.rate}}" class="form-control"/>
+  </div>
+  -->
+  
+  <button type="submit" class="btn btn-success">Save</button>
+</form>
+
+{% endblock %}
+{# [END form] #}
