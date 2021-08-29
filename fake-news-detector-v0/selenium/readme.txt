@@ -1,1 +1,0 @@
-이 폴더에는 이용하는 chrome browser에 맞는 chromedriver가 존재해야 합니다.
