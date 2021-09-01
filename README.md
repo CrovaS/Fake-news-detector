@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="" width="">
+    <img src="https://github.com/CrovaS/Fake-news-detector-v0/issues/1#issue-984688535" width="100px">
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
