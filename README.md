@@ -12,9 +12,17 @@
     <a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/></a>
 </p>
 
-<p align="center">
-   Disfactch 어쩌구....
-</p>
+<h3 align="center">TEAM DISFACTCH: Fake News Detector</h3>
+
+이 프로그램은 가짜에 속지 않는데 참고가 되기 위해 제작됐다. 비록 실시간으로 정보가 생겨나고 그 유통이 매우 빨라져 정보의 참거짓을 구분하기 어려워졌지만, 그래도 뉴스는 정확한 정보를 제공해야 한다. 가짜뉴스는 언론 보도를 훼손하고 중요한 뉴스기사를 다루기 어렵게 한다. 눈길을 사로잡는 헤드라인이나 조작된 기사를 사용하는 것은 내용의 전달 없이 클릭 수익만을 증가시킨다. 은연 중 숨어있는 홍보성 기사는 공정하지 않은 경쟁을 부추긴다. 사전 조사 없이 양산되는 기사들은 가짜뉴스를 양산하는 주 원인이 된다.
+
+ * 해당 프로그램은 세 가지 카테고리의 가짜뉴스를 분별하는 알고리즘을 탑재하고 있습니다.
+ * 해당 프로그램은 데이터베이스를 비공개로 하고 있습니다. (극히 일부만 공개)
+ * 해당 프로그램은 웹페이지를 제공하고 있습니다.
+
+#### Usage
+1. 이 프로그램은 2021 공개 sw 개발자 대회에 출품되었습니다.
+2. 이 프로그램의 알고리즘을 통해 자극적, 홍보성, 양샨형 기사를 알고리즘에서 내릴 수 있습니다.
 
 # Preview
 <p align="center">
@@ -30,15 +38,24 @@
 
 
 # Developer
-2021 공개 sw 개발자 대회 
+ 
 |Name|<a href="https://github.com/CrovaS">Byeongho Hwang<a>|<a href="https://github.com/subinga18">Subin Kim</a>|<a href="https://github.com/yunzi125">Yunji Lee</a>|<a href="https://github.com/jhn90928">Hanna Jeon</a>|
 |:--|:--:|:--:|:--:|:--:|
 |**Role**|Sudden<br>SQL Search<br>Function Gathering<br>webpage|Conjunction<br>Crawling(bs)<br>Word2Vec|Causal<br>Propernoun|Summaries<br>Positivity Check|
 
 
 # Function
- - news factchecking 
- - 어쩌구 아직 덜 썼다 
+### Factchecking Algorithm
+표현의 자유를 제한하지 않는 선에서 가짜뉴스를 판별해야하기에, 기사 내부만 보더라도 명백하게 가짜라고 판별할 수 있는 경우에 대해서만 그 요소들을 제거하려 한다. 따라서 선정적 제목을 붙인 낚시성 기사, 클릭수를 높이기 위해 짜깁기하거나 동일 내용을 반복 게재하는 기사, 특정 제품/업체를 홍보하는 내용을 담은 광고성 기사를 가짜뉴스로 정의했다.
+
+System 1: 낚시성 기사 제목 판별
+System 2: 홍보성 기사 판별
+System 3: 동일 기사 반복 게재
+
+모든 모델의 제어 및 최종 점수 산정은 /factcode/model_factcheck.py에서 이루어지며, 사용된 모듈들의 상세 제어는 각각 /factcode/provocative_title.py, /factcode/publicity_article.py, /factcode/republishing_same.py에서 이루어진다. 사용된 인공지능 모델들과 최적화 모델들은 각각 factcode 폴더에 담겨있다.
+
+### Web page
+페이지를 제어하는 파일인 /factcode/crud.py는 template 폴더 및 디자인을 담당하는 static/css folder와 상호작용한다. 
 
 # Structure
 웹을 통해 기사의 링크를 입력할 수 있으며, 그에 따라 신뢰도가 출력되는 기능을 가지고 있다. flask를 이용해 HTML5와 python을 연동하며, 이는 인공지능 라이브러리 tensorflow를 보다 효과적으로 이용하기 위함이다.
@@ -91,7 +108,7 @@
 </p>
 동일 기사를 반복 게재하는 것은 다른 기사를 베껴 조회수를 올리기 위한 목적으로 주로 행해지며, 심지어 추가 정보 없이 기존의 기사를 축약한 형태로 만들어진다. 유사한 기사라고 하더라도 그것이 가짜뉴스로 보기는 어려운 경우가 많지만, 시간의 비교와 함께 너무 과도하게 축약되어 있는 경우 이를 가짜뉴스로 분류할 수 있어야한다. 또한 하루에 비정상적으로 많은 뉴스를 작성하는 기자, 제목과 본문이 다른 기사를 쓰는 언론사는 가짜뉴스를 판별하는데  반드시 살펴봐야할 대상이다. 따라서 다음 세 가지 요소를 살핀다.
 
-    * 기존의 기사를 짜집기한 요약본에 해당하는가?
+    * 기존의 기사를 짜깁기한 요약본에 해당하는가?
 
     * 기자가 하루에 비정상적으로 많은 기사를 올리는가?(하루에 1000개 이상의 기사를 올리는 기자도 있다.)
 
@@ -113,6 +130,7 @@
 2. Install Anaconda: https://www.anaconda.com/products/individual-d
 3. (Optional) Create database in Google Cloud SQL
 4. (Optional) Edit database, sql, python files in (config.py, app.yaml, tox.ini)
+5. Turn ON the SQL instance on Google Cloud Platform (This has to be done by authenticator)
 
 
 ### STEP 2: Install Requirements
