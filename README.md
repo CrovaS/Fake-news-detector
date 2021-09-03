@@ -3,7 +3,7 @@
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
-<h1 align="center">Fake-news-detector-v0</h1>
+<h1 align="center">Fake-news-detector</h1>
 
 
 <p align="center">
