@@ -4,7 +4,10 @@
 </p>
 
 <h1 align="center">Fake-news-detector</h1>
-
+<p align="center">
+    <img src="https://img.shields.io/badge/license-BSD-green">
+    <a href="https://opensource.org/licenses/BSD-3-Clause"></a>
+</p>
 
 <p align="center">
    Disfactch 어쩌구....
