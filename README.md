@@ -12,8 +12,15 @@
 
 ## Preview
 <p align="center">
- <img src="" width="">
+    <img src="https://user-images.githubusercontent.com/86072294/131960063-9d5248d5-4c2d-4263-b275-31179e203d2a.PNG" width="600px">
 </p>
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/86072294/131960100-94f1740b-aa8d-46da-a61e-353f3cda6292.PNG" width="600px">
+</p>
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/86072294/131960285-54903538-1d3b-48bf-8194-413eadb03fb0.PNG" width="900px">
+</p>
+
 
 
 ## Developer
