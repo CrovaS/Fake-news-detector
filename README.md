@@ -21,32 +21,32 @@
 
 ## Structure
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/86072294/131956906-14cb2bc1-8313-4397-b818-5a013474ad57.PNG" width="900px">
+    <img src="https://user-images.githubusercontent.com/86072294/131956906-14cb2bc1-8313-4397-b818-5a013474ad57.PNG" width="700px">
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/86072294/131956983-c0b4be2e-9bbf-43ab-a3eb-1a2a3e296edd.PNG" width="900px">
+    <img src="https://user-images.githubusercontent.com/86072294/131956983-c0b4be2e-9bbf-43ab-a3eb-1a2a3e296edd.PNG" width="700px">
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/86072294/131957025-9fe94e04-8d39-4ac9-9156-ae6affad5004.PNG" width="900px">
+    <img src="https://user-images.githubusercontent.com/86072294/131957025-9fe94e04-8d39-4ac9-9156-ae6affad5004.PNG" width="700px">
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/86072294/131957098-9fddefb4-6fb3-4ff8-b257-ddbe718782de.PNG" width="900px">
+    <img src="https://user-images.githubusercontent.com/86072294/131957098-9fddefb4-6fb3-4ff8-b257-ddbe718782de.PNG" width="700px">
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/86072294/131957138-f7e09e03-163e-49d0-9a0c-a22fcfdae4e3.PNG" width="900px">
+    <img src="https://user-images.githubusercontent.com/86072294/131957138-f7e09e03-163e-49d0-9a0c-a22fcfdae4e3.PNG" width="700px">
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/86072294/131957176-16a807fd-00a9-4c39-bc72-234df00d12fa.PNG" width="900px">
+    <img src="https://user-images.githubusercontent.com/86072294/131957176-16a807fd-00a9-4c39-bc72-234df00d12fa.PNG" width="700px">
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
