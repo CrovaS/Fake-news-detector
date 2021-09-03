@@ -48,9 +48,9 @@
 ### Factchecking Algorithm
 표현의 자유를 제한하지 않는 선에서 가짜뉴스를 판별해야하기에, 기사 내부만 보더라도 명백하게 가짜라고 판별할 수 있는 경우에 대해서만 그 요소들을 제거하려 한다. 따라서 선정적 제목을 붙인 낚시성 기사, 클릭수를 높이기 위해 짜깁기하거나 동일 내용을 반복 게재하는 기사, 특정 제품/업체를 홍보하는 내용을 담은 광고성 기사를 가짜뉴스로 정의했다.
 
-System 1: 낚시성 기사 제목 판별
-System 2: 홍보성 기사 판별
-System 3: 동일 기사 반복 게재
+ * System 1: 낚시성 기사 제목 판별
+ * System 2: 홍보성 기사 판별
+ * System 3: 동일 기사 반복 게재
 
 모든 모델의 제어 및 최종 점수 산정은 /factcode/model_factcheck.py에서 이루어지며, 사용된 모듈들의 상세 제어는 각각 /factcode/provocative_title.py, /factcode/publicity_article.py, /factcode/republishing_same.py에서 이루어진다. 사용된 인공지능 모델들과 최적화 모델들은 각각 factcode 폴더에 담겨있다.
 
