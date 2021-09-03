@@ -28,9 +28,9 @@ STEP 1: Google Cloud Platform Settings
 
 STEP 2: Install Requirements
 1. Anaconda Prompt (Anaconda3)
-'''
+```
 conda create -n [Your name for environment] python=3.6.13 anaconda
-'''
+```
 2. 
 
 ## Developer
