@@ -19,6 +19,37 @@
  - news factchecking 
  - 어쩌구 아직 덜 썼다 
 
+## Structure
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/38221941/131619091-4c427677-e561-4fad-b95d-c156cf67e1b5.png" width="300px">
+    <a href="https://github.com/"><img alt="" src=""></a>
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/38221941/131619091-4c427677-e561-4fad-b95d-c156cf67e1b5.png" width="300px">
+    <a href="https://github.com/"><img alt="" src=""></a>
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/38221941/131619091-4c427677-e561-4fad-b95d-c156cf67e1b5.png" width="300px">
+    <a href="https://github.com/"><img alt="" src=""></a>
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/38221941/131619091-4c427677-e561-4fad-b95d-c156cf67e1b5.png" width="300px">
+    <a href="https://github.com/"><img alt="" src=""></a>
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/38221941/131619091-4c427677-e561-4fad-b95d-c156cf67e1b5.png" width="300px">
+    <a href="https://github.com/"><img alt="" src=""></a>
+</p>
+
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/38221941/131619091-4c427677-e561-4fad-b95d-c156cf67e1b5.png" width="300px">
+    <a href="https://github.com/"><img alt="" src=""></a>
+</p>
+
 ## Work Flow
 ### STEP 1: Google Cloud Platform Settings
 1. Install Google Cloud SDK: https://cloud.google.com/sdk/docs/install
