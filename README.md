@@ -30,12 +30,64 @@ STEP 1: Google Cloud Platform Settings
 STEP 2: Install Requirements
 1. On Anaconda Prompt (Anaconda3)
 ```
-conda create -n [Your name for environment] python=3.6.13 anaconda
+conda create -n [Your name for environment] python=[Your python version] anaconda
+```
+For example,
+```
+conda create -n factchecker python=3.6.13 anaconda
 ```
 2. Find your directory to this project
 3. Install requirements
 ```
 pip install -r requirements.txt
+```
+
+
+STEP 3: KoNLPy, WordtoVec Settings
+1. Install chrome driver for your version: https://chromedriver.chromium.org/downloads
+2. Install ko.bin, ko.tsv here: https://github.com/Kyubyong/wordvectors
+3. Put your chrome driver .exe file to
+```
+.../selenium
+```
+4. Put your ko.bin, ko.tsv file to
+```
+.../factcode/CrawlMorpheme/content
+```
+5. Make JAVA HOME Settings for usual KoNLPy settings (Environmental Variables)
+6. Install JPype that fits your python: https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype , do the pip installation
+```
+pip install [Your Jpype filename]
+```
+For example,
+```
+pip install JPype1‑1.3.0‑cp310‑cp310‑win_amd64.whl
+```
+
+STEP 4: Directory Settings
+1. Go to the file /factcode/settingbox.py
+There are three directories for the setting, only 'Absolute path' works.
+2. Run settingbox.py
+
+STEP 5: Local Machine Running
+1. Setup SDK
+```
+cloud_sql_proxy.exe -instances="fake-news-base:asia-northeast3:fakenews"=tcp:3306
+```
+2. Setup Anaconda Prompt
+(1) Go to environment you made, then go to exact project file
+(2) Create Table
+```
+python factcode\model_cloudsql.py
+```
+(3) Run main
+```
+python main.py
+```
+
+STEP 6: Update Application
+```
+gcloud app deploy
 ```
 
 ## Developer
