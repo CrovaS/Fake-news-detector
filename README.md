@@ -85,7 +85,8 @@
 이를 살펴보기 위해 우선 input으로부터 제목, 본문요약 5, 기자, 언론사를 가져온다. 여기서 제목과 본문요약 5의 내용에서 형태소를 분리하여 제목과 본문의 연관성을 조사하기 용이하게 한다.
         
         
-* 각 시스템에 필요한 모듈은 다음과 같이 정리된다.
+### 모듈 정리
+    각 시스템에 필요한 모듈은 다음과 같이 정리된다.
 <p align="center">
     <img src="https://user-images.githubusercontent.com/86072294/131957176-16a807fd-00a9-4c39-bc72-234df00d12fa.PNG" width="700px">
     <a href="https://github.com/"><img alt="" src=""></a>
