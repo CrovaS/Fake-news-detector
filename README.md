@@ -20,14 +20,14 @@
  - 어쩌구 아직 덜 썼다 
 
 ## Work Flow
-#### STEP 1: Google Cloud Platform Settings
+### STEP 1: Google Cloud Platform Settings
 1. Install Google Cloud SDK: https://cloud.google.com/sdk/install/?hl=ko
 2. Install Anaconda: https://www.anaconda.com/products/individual-d
-3. (Option) Create database in Google Cloud SQL
-4. (Option) Edit database, sql, python files in (config.py, app.yaml, tox.ini)
+3. (Optional) Create database in Google Cloud SQL
+4. (Optional) Edit database, sql, python files in (config.py, app.yaml, tox.ini)
 
 
-#### STEP 2: Install Requirements
+### STEP 2: Install Requirements
 1. On Anaconda Prompt (Anaconda3)
 ```
 conda create -n [Your name for environment] python=[Your python version] anaconda
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ```
 
 
-#### STEP 3: KoNLPy, WordtoVec Settings
+### STEP 3: KoNLPy, WordtoVec Settings
 1. Install chrome driver for your version: https://chromedriver.chromium.org/downloads
 2. Install ko.bin, ko.tsv here: https://github.com/Kyubyong/wordvectors
 3. Put your chrome driver .exe file to
@@ -64,12 +64,12 @@ For example,
 pip install JPype1‑1.3.0‑cp310‑cp310‑win_amd64.whl
 ```
 
-#### STEP 4: Directory Settings
+### STEP 4: Directory Settings
 1. Go to the file /factcode/settingbox.py
 There are three directories for the setting, only 'Absolute path' works.
 2. Run settingbox.py
 
-#### STEP 5: Local Machine Running
+### STEP 5: Local Machine Running
 1. Setup SDK
 ```
 cloud_sql_proxy.exe -instances="fake-news-base:asia-northeast3:fakenews"=tcp:3306
@@ -85,7 +85,7 @@ python factcode\model_cloudsql.py
 python main.py
 ```
 
-#### STEP 6: Update Application
+### STEP 6: Update Application
 ```
 gcloud app deploy
 ```
