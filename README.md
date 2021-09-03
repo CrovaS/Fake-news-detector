@@ -10,7 +10,7 @@
    Disfactch 어쩌구....
 </p>
 
-## Preview
+# Preview
 <p align="center">
     <img src="https://user-images.githubusercontent.com/86072294/131960063-9d5248d5-4c2d-4263-b275-31179e203d2a.PNG" width="1000px">
 </p>
@@ -23,18 +23,18 @@
 
 
 
-## Developer
+# Developer
 2021 공개 sw 개발자 대회 
 |Name|<a href="https://github.com/CrovaS">Byeongho Hwang<a>|<a href="https://github.com/subinga18">Subin Kim</a>|<a href="https://github.com/yunzi125">Yunji Lee</a>|<a href="https://github.com/jhn90928">Hanna Jeon</a>|
 |:--|:--:|:--:|:--:|:--:|
 |**Role**|Sudden<br>SQL Search<br>Function Gathering<br>webpage|Conjunction<br>Crawling(bs)<br>Word2Vec|Causal<br>Propernoun|Summaries<br>Positivity Check|
 
 
-## Function
+# Function
  - news factchecking 
  - 어쩌구 아직 덜 썼다 
 
-## Structure
+# Structure
 웹을 통해 기사의 링크를 입력할 수 있으며, 그에 따라 신뢰도가 출력되는 기능을 가지고 있다. flask를 이용해 HTML5와 python을 연동하며, 이는 인공지능 라이브러리 tensorflow를 보다 효과적으로 이용하기 위함이다.
 <p align="center">
     <img src="https://user-images.githubusercontent.com/86072294/131956906-14cb2bc1-8313-4397-b818-5a013474ad57.PNG" width="700px">
@@ -92,7 +92,7 @@
     <a href="https://github.com/"><img alt="" src=""></a>
 </p>
 
-## Work Flow
+# Work Flow
 ### STEP 1: Google Cloud Platform Settings
 1. Install Google Cloud SDK: https://cloud.google.com/sdk/docs/install
 2. Install Anaconda: https://www.anaconda.com/products/individual-d
@@ -163,7 +163,7 @@ gcloud app deploy
 ```
 
 
-## License
+# License
 ### 1. Team DISFACTCH
 For all structure of this project,
     
