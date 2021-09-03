@@ -142,6 +142,8 @@ For all structure of this project,
     
 Copyright 2021 Team Disfactch - Byeongho Hwang, Subin Kim, Yunji Lee, Hanna Jeon
 
+    https://opensource.org/licenses/BSD-3-Clause
+
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
