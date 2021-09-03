@@ -21,7 +21,7 @@
 
 ## Work Flow
 ### STEP 1: Google Cloud Platform Settings
-1. Install Google Cloud SDK: https://cloud.google.com/sdk/install/?hl=ko
+1. Install Google Cloud SDK: https://cloud.google.com/sdk/docs/install
 2. Install Anaconda: https://www.anaconda.com/products/individual-d
 3. (Optional) Create database in Google Cloud SQL
 4. (Optional) Edit database, sql, python files in (config.py, app.yaml, tox.ini)
