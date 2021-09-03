@@ -18,7 +18,21 @@
 ## Function
  - news factchecking 
  - 어쩌구 아직 덜 썼다 
- 
+
+## Work Flow
+STEP 1: Google Cloud Platform Settings
+1. Install Google Cloud SDK: https://cloud.google.com/sdk/install/?hl=ko
+2. Install Anaconda: https://www.anaconda.com/products/individual-d
+3. (Option) Create database in Google Cloud SQL
+4. (Option) Edit database, sql, python files in (config.py, app.yaml, tox.ini)
+
+STEP 2: Install Requirements
+1. Anaconda Prompt (Anaconda3)
+'''
+conda create -n [Your name for environment] python=3.6.13 anaconda
+'''
+2. 
+
 ## Developer
 2021 공개 sw 개발자 대회 
 |Name|<a href="https://github.com/CrovaS">Byeongho Hwang<a>|<a href="https://github.com/subinga18">Subin Kim</a>|<a href="https://github.com/yunzi125">Yunji Lee</a>|<a href="https://github.com/jhn90928">Hanna Jeon</a>|
