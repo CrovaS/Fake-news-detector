@@ -74,13 +74,12 @@ There are three directories for the setting, only 'Absolute path' works.
 ```
 cloud_sql_proxy.exe -instances="fake-news-base:asia-northeast3:fakenews"=tcp:3306
 ```
-2. Setup Anaconda Prompt
-(1) Go to environment you made, then go to exact project file
-(2) Create Table
+2. Setup Anaconda Prompt, go to environment you made, then go to exact project file
+3. Create Table
 ```
 python factcode\model_cloudsql.py
 ```
-(3) Run main
+4. Run main
 ```
 python main.py
 ```
