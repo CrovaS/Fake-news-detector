@@ -86,7 +86,7 @@
         
         
 ### 모듈 정리
-    각 시스템에 필요한 모듈은 다음과 같이 정리된다.
+각 시스템에 필요한 모듈은 다음과 같이 정리된다.
 <p align="center">
     <img src="https://user-images.githubusercontent.com/86072294/131957176-16a807fd-00a9-4c39-bc72-234df00d12fa.PNG" width="700px">
     <a href="https://github.com/"><img alt="" src=""></a>
