@@ -2,7 +2,6 @@
 # Written by Yunji Lee (이윤지)
 
 # causal.py는 명사간의 인과관계를 파악해 문장 내 도치 여부를 파악하는 파일이다.
-# 등등등...
 
 # SPDX-FileCopyrightText: © 2021 Yunji Lee <qwerty5098@kyonggi.ac.kr>
 # SPDX-License-Identifier: BSD-3-Clause
